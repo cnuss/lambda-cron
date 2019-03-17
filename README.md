@@ -1,1 +1,1 @@
-# lambda-cron
+# serverless-cron
