@@ -1,0 +1,13 @@
+service: lambda-cron
+
+provider:
+  name: aws
+  runtime: python3.7
+
+functions:
+  hello:
+    handler: handler.handle
+    events:
+      - schedule: cron(0/15 * * * ? *)
+        input:
+          key1: value1
